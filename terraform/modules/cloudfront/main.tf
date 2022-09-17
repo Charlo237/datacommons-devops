@@ -8,6 +8,13 @@ resource "aws_s3_bucket" "access_logs" {
   bucket =  "${data.aws_s3_bucket.files_bucket.bucket}-cloudfront-logs"
   acl    = "private"
   tags = var.tags
+  server_side_encryption_configuration {
+    rule {
+      apply_server_side_encryption_by_default {
+        sse_algorithm = "AE256"
+      }
+    }
+  }
 }
 
 #create s3 bucket policy

@@ -21,6 +21,7 @@ resource "aws_cloudwatch_metric_alarm" "cloudfront_alarm" {
 
 resource "aws_sns_topic" "cloudfront_alarm_topic" {
   name = "${var.stack_name}-${var.env}-cloudfront-4xx-5xx-errors"
+  kms_master_key_id = data.aws_kms_key.sns.id
   tags = var.tags
 }
 

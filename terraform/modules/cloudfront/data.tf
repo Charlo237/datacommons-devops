@@ -128,4 +128,7 @@ data "aws_iam_policy_document" "lambda_exec_role_policy" {
     ]
   }
 }
+data "aws_kms_key" "sns" {
+  key_id = "alias/aws/sns"
+}
 
