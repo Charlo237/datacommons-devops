@@ -9,7 +9,6 @@
 
 | Name | Version |
 |------|---------|
-| <a name="provider_newrelic"></a> [newrelic](#provider\_newrelic) | n/a |
 | <a name="provider_sumologic"></a> [sumologic](#provider\_sumologic) | n/a |
 
 ## Modules
@@ -20,9 +19,6 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [newrelic_one_dashboard.alb_dashboard](https://registry.terraform.io/providers/newrelic/newrelic/latest/docs/resources/one_dashboard) | resource |
-| [newrelic_one_dashboard.fargate_dashboard](https://registry.terraform.io/providers/newrelic/newrelic/latest/docs/resources/one_dashboard) | resource |
-| [newrelic_one_dashboard.os_dashboard](https://registry.terraform.io/providers/newrelic/newrelic/latest/docs/resources/one_dashboard) | resource |
 | [sumologic_collector.collector](https://registry.terraform.io/providers/sumologic/sumologic/latest/docs/resources/collector) | resource |
 | [sumologic_http_source.backend_source](https://registry.terraform.io/providers/sumologic/sumologic/latest/docs/resources/http_source) | resource |
 | [sumologic_http_source.files_source](https://registry.terraform.io/providers/sumologic/sumologic/latest/docs/resources/http_source) | resource |
@@ -46,4 +42,5 @@ No modules.
 | <a name="output_backend_source_url"></a> [backend\_source\_url](#output\_backend\_source\_url) | backend source url |
 | <a name="output_files_source_url"></a> [files\_source\_url](#output\_files\_source\_url) | files source url |
 | <a name="output_frontend_source_url"></a> [frontend\_source\_url](#output\_frontend\_source\_url) | frontend source url |
+| <a name="output_newrelic_private_location_key"></a> [newrelic\_private\_location\_key](#output\_newrelic\_private\_location\_key) | private location key |
 <!-- END_TF_DOCS -->
