@@ -15,3 +15,16 @@ variable "secret_values" {
     description = string
   }))
 }
+variable "secret_values" {
+  type = map(object({
+    description.             = string
+    secretKey                = string
+    secretValue              = {
+     neo4j_user              = string
+     neo4j_password          = string
+     neo4j_ip                = string
+     indexd_url              = string
+     sumo_collector_endpoint = string
+    }
+  }))
+}
